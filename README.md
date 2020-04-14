@@ -33,3 +33,6 @@ The tests are configurable by setting VM options. Go to 'Run' > 'Edit configurat
 -DbaseUrl=https://www.swedbank.ee/private
 -Dbrowser=chrome
 .. these parameters to VM options. -DbaseUrl feeds any domain name to test suite. This is handy for an example when the site is deployed to some test enviroment and has a domain set for some test domain name. -dbrowser excepts either 'firefox' or 'browser' as values to launch the tests either with firefox of chrome. By default the tests always run for 'https://www.swedbank.ee/private' and use chrome. 
+
+Reports:
+Added HTML reporting for tests. After test run, this can be seen in: /target/cucumber-reports/. Click on index.html there and click to 'Open in browser' and choose the browser you use. This opens a generated html page for the test runs.
